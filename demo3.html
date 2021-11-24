@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .grey{
+        color: grey;
+        background-color: indianred;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .red{
+        color: red;
+        background-color: saddlebrown;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+    <input type="text" id="name" class="green"/>
+    <button onclick="changeclass('red')">Change to red</button>
+    <button onclick="changeclass('grey')">Change to grey</button>
+    <script>
+        function changeclass(classname)
+        {
+            document.getElementById("name").className=classname;
+        }
+    </script>
+</body>
+</html>

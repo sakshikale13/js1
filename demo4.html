@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="clicked()">click Me</button>
+    <button ondblclick="doubleclicked()">doubleclicked</button>
+    <input type="text" onkeydown="keydown()"/>
+    <input type="text" onkeyup="keyup()"/>
+    <input type="text" onkeypress="keypress()"/>
+    <script>
+        function keydown()
+        {
+          alert("key down")  ;
+        }
+        function keyup()
+        {
+            alert("key up");
+        }
+        function keypress(){
+            alert("key press");
+        }
+        function clicked(){
+            alert("you clicked button");
+        }
+        function doubleclicked(){
+            alert("you double clicked button" );
+        }
+    </script>
+</body>
+</html>
