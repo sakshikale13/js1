@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.cls{
+    color: brown;
+}
+.bkg{
+    background-color: cornflowerblue;
+}
+</style>
+<body>
+     <div class="cls bkg">
+        <h1 id="myh1"> H1 from Div1</h1>
+    </div>
+    <div id="cls">
+        <h1 id="myh1"> H1 from Div2</h1>
+    </div>
+    <div id="cls">
+        <h1 id="myh1"> H1 from Div3</h1>
+    </div>
+    <button onclick="get()">Get Element</button>
+    <script>
+        function get() {
+            let divs = document.getElementsByTagName("cls");
+            for (let i = 0; i < cls.length; i++) {
+                alert(cls[i].id);
+            }
+        }
+    </script>
+</body>
+
+</html>

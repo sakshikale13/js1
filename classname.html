@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+Name: <input type="text" id="name" /><br/><br/>
+About You: <textarea id="about"></textarea><br/><br/>
+Gender:<label><input type="radio" id="male" value="male" name="gender"/>Male</label>
+<label><input type="radio" id="female" value="female" name="gender"/>Male</label>
+<label><input type="radio" id="other" value="other" name="other"/>Female</label><br/><br/>
+Hobbies
+<label> <input type="checkbox" id="cricket" name="hobbies" value="cricket">Cricket</label>
+<label> <input type="checkbox" id="chess" name="hobbies" value="chess">Chess</label>
+<label> <input type="checkbox" id="football" name="hobbies" value="football">Football</label><br/><br/>
+<button onclick="display()">display</button><br/><br/>
+<div id="display"></div>
+<script>
+    function display()
+    {
+        let name=document.getElementById("name").value;
+        alert (name);
+        let about=document.getElementById("about").value;
+        alert(about);
+        let gender=document.getElementsByName("gender");
+        for(let i=0;i<gender.length;i++)
+            {
+              if( gender[i].checked)
+              alert(gender[i].value);
+             }
+             let hobbies=document.getElementsByName("hobbies");
+             for(let i=0;i<hobbies.length;i++)
+             {
+                 if(hobbies[i].checked)
+                 alert(hobbies[i].value);
+             }
+    }
+
+</script>
+
+</body>
+</html>
