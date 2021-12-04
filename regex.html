@@ -7,7 +7,64 @@
     <title>Document</title>
 </head>
 <body>
+    <input type="text" id="my" />
+    <button onclick="test()">Test</button>
+    <button onclick="exec()">Exec</button>
+    <button onclick="compile()">Complie</button>
+
+    <br />
+    <input type="text" id="myemail" />
+    <button onclick="validateemail()">Validate Email</button>
+
+    <br />
+    <input type="text" id="myphone" />
+    <button onclick="validatephone()">Validate Phone</button>
+    <script>
+        function test()
+        {
+            var pattern = new RegExp("e");
+            var str = document.getElementById("my").value;
+            var result = pattern.test(str);
+            alert(result);
+        }
+
+        function exec()
+        {
+            var pattern = new RegExp("e");
+            var str = document.getElementById("my").value;
+            var result = pattern.exec(str);
+            alert(result);
+        }
+
+        function compile()
+        {
+            var pattern = new RegExp("e");
+            var str = document.getElementById("my").value;
+            alert(pattern.test(str));
+            pattern.compile("d");
+            pattern = new RegExp("d");
+            alert(pattern.test(str));
+            // alert(result);
+        }
+
+        function validateemail()
+        {
+           var pattern = new RegExp(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/);
+           var myemail = document.getElementById("myemail").value;
+           var result = pattern.test(myemail);
+           alert(result);
+        }
+
+        function validatephone()
+        {
+           var pattern = new RegExp(/^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$/);
+           var myphone = document.getElementById("myphone").value;
+           var result = pattern.test(myphone);
+           alert(result);
+        }
+
     
+</script>
     
 </body>
 </html>
