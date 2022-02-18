@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">for
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name" />
+    <button onclick="savecookie()">Save Cookie</button>
+
+    <script>
+        function savecookie()
+        {
+            let name = document.getElementById("name").value;
+            let tomorrow = new Date() + 1;
+            document.cookie = "name=" + name + ";expires=" + tomorrow;
+        }
+    </script>
+</body>
+</html>
+    
+</body>
+</html>
